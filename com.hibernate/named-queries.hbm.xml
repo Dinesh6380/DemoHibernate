@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<query name="HQL_GET_ALL_STUDENT">from Student</query>
+
+<sql-query name="SQL_GET_ALL_STUDENT">
+		<![CDATA[select id, Last_name,First_name from Student]]>
+	</sql-query>
+</hibernate-mapping>
